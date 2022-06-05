@@ -1,17 +1,3 @@
-#!/bin/bash
-
-
-## --------------------------------------------------
-## Gabriela Q.  Pablo S. y Benjamín S. - IoTicos.org
-## ---------------------------------------------------
-
-## --------------------------------------------------
-## ReymondRojasNúñez - IoTCostaRica -ISCORP2021
-## Creditos: ioticos.org
-## ---------------------------------------------------
-
-## GRACIAS REYMOND!!!
-
 rand-str()
 {
     # Return random alpha-numeric string of given LENGTH
@@ -145,7 +131,7 @@ random_str=$(rand-str 20)
 printf "\n\n🔐 Necesitamos crear la clave del superusuario MQTT \n"
 while [[ -z "$EMQX_NODE_SUPERUSER_PASSWORD" ]]
 do
-  read -p "   MQTT Superuser Name $(tput setaf 128)(${random_str})$(tput setaf 7): "  EMQX_NODE_SUPERUSER_PASSWORD
+  read -p "   MQTT Superuser Pass $(tput setaf 128)(${random_str})$(tput setaf 7): "  EMQX_NODE_SUPERUSER_PASSWORD
   EMQX_NODE_SUPERUSER_PASSWORD=${EMQX_NODE_SUPERUSER_PASSWORD:-${random_str}}
   echo "      Selected MQTT Superuser Password ► ${EMQX_NODE_SUPERUSER_PASSWORD} ✅"
 done
