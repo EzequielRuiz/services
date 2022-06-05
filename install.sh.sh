@@ -1,3 +1,4 @@
+#!/bin/bash
 rand-str()
 {
     # Return random alpha-numeric string of given LENGTH

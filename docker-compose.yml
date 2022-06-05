@@ -43,10 +43,10 @@ services:
       - mongo
 
     extra_hosts:
-      - "localhost:192.168.0.0"
+      - "localhost:192.168.0.6"
 
     environment:
-      EMQX_NAME: MIEMMTEC 2022
+      EMQX_NAME: ioticos-gl
       EMQX_HOST: 127.0.0.1
 
       TZ: "${TZ}"
