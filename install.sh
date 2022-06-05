@@ -262,9 +262,7 @@ sudo ./install_docker.sh
 sudo rm install_docker.sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-sudo git clone https://github.com/ioticos/ioticos_god_level_services.git
-sudo mv ioticos_god_level_services services
-
+sudo git clone https://github.com/EzequielRuiz/services.git
 
 cd services
 
@@ -289,8 +287,7 @@ sudo sh -c " echo 'EMQX_DEFAULT_USER_PASSWORD=${EMQX_DEFAULT_USER_PASSWORD}' >> 
 sudo sh -c " echo 'EMQX_DEFAULT_APPLICATION_SECRET=${EMQX_DEFAULT_APPLICATION_SECRET}' >> $filename"
 
 
-sudo git clone https://github.com/ioticos/ioticos_god_level_app.git
-sudo mv ioticos_god_level_app  app
+sudo git clone https://github.com/EzequielRuiz/app.git
 
 cd app
 
