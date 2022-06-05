@@ -1,4 +1,17 @@
 #!/bin/bash
+
+
+## --------------------------------------------------
+## Gabriela Q.  Pablo S. y Benjamín S. - IoTicos.org
+## ---------------------------------------------------
+
+## --------------------------------------------------
+## ReymondRojasNúñez - IoTCostaRica -ISCORP2021
+## Creditos: ioticos.org
+## ---------------------------------------------------
+
+## GRACIAS REYMOND!!!
+
 rand-str()
 {
     # Return random alpha-numeric string of given LENGTH
@@ -16,7 +29,13 @@ rand-str()
 
 clear
 msg="
-Miemmtec 2022                                               
+  _____     _____ _                   ___   __  
+  \_   \___/__   (_) ___ ___  ___    / _ \ / /  
+   / /\/ _ \ / /\/ |/ __/ _ \/ __|  / /_\// /   
+/\/ /_| (_) / /  | | (_| (_) \__ \ / /_\\/ /___ 
+\____/ \___/\/   |_|\___\___/|___/ \____/\____/ 
+
+                                    ioticoscr                                                
 "
 
 
@@ -126,7 +145,7 @@ random_str=$(rand-str 20)
 printf "\n\n🔐 Necesitamos crear la clave del superusuario MQTT \n"
 while [[ -z "$EMQX_NODE_SUPERUSER_PASSWORD" ]]
 do
-  read -p "   MQTT Superuser Pass $(tput setaf 128)(${random_str})$(tput setaf 7): "  EMQX_NODE_SUPERUSER_PASSWORD
+  read -p "   MQTT Superuser Name $(tput setaf 128)(${random_str})$(tput setaf 7): "  EMQX_NODE_SUPERUSER_PASSWORD
   EMQX_NODE_SUPERUSER_PASSWORD=${EMQX_NODE_SUPERUSER_PASSWORD:-${random_str}}
   echo "      Selected MQTT Superuser Password ► ${EMQX_NODE_SUPERUSER_PASSWORD} ✅"
 done
@@ -257,7 +276,9 @@ sudo ./install_docker.sh
 sudo rm install_docker.sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-sudo git clone https://github.com/EzequielRuiz/services.git
+sudo git clone https://github.com/ioticos/ioticos_god_level_services.git
+sudo mv ioticos_god_level_services services
+
 
 cd services
 
@@ -282,7 +303,8 @@ sudo sh -c " echo 'EMQX_DEFAULT_USER_PASSWORD=${EMQX_DEFAULT_USER_PASSWORD}' >> 
 sudo sh -c " echo 'EMQX_DEFAULT_APPLICATION_SECRET=${EMQX_DEFAULT_APPLICATION_SECRET}' >> $filename"
 
 
-sudo git clone https://github.com/EzequielRuiz/app.git
+sudo git clone https://github.com/ioticos/ioticos_god_level_app.git
+sudo mv ioticos_god_level_app  app
 
 cd app
 
