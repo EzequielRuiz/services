@@ -46,7 +46,7 @@ services:
       - "localhost:192.168.0.6"
 
     environment:
-      EMQX_NAME: ioticos-gl
+      EMQX_NAME: sicon_miemmtec
       EMQX_HOST: 127.0.0.1
 
       TZ: "${TZ}"
