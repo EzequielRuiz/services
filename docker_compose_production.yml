@@ -92,7 +92,7 @@ services:
       EMQX_AUTH__MONGO__PASSWORD: "${MONGO_PASSWORD}"
       EMQX_AUTH__MONGO__AUTH_SOURCE: admin
 
-      EMQX_AUTH__MONGO__DATABASE: "ioticos_god_level"
+      EMQX_AUTH__MONGO__DATABASE: "miemmtec"
       EMQX_AUTH__MONGO__AUTH_QUERY__COLLECTION: "emqxauthrules"
 
       EMQX_AUTH__MONGO__SUPER_QUERY__COLLECTION: "emqxauthrules"

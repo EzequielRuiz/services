@@ -16,7 +16,7 @@ rand-str()
 
 clear
 msg="
-Miemmtec 2022                                               
+Miemmtec 2023                                               
 "
 
 
@@ -302,7 +302,7 @@ sudo sh -c "echo 'MONGO_USERNAME=${MONGO_USERNAME}' >> $filename"
 sudo sh -c "echo 'MONGO_PASSWORD=${MONGO_PASSWORD}' >> $filename"
 sudo sh -c "echo 'MONGO_HOST=mongo' >> $filename"
 sudo sh -c "echo 'MONGO_PORT=${MONGO_PORT}' >> $filename"
-sudo sh -c "echo 'MONGO_DATABASE=ioticos_god_level' >> $filename"
+sudo sh -c "echo 'MONGO_DATABASE=miemmtec' >> $filename"
 sudo sh -c "echo '' >> $filename"
 
 
