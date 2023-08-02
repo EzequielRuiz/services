@@ -43,7 +43,7 @@ services:
       - mongo
 
     extra_hosts:
-      - "localhost:192.168.0.6"
+      - "localhost:10.0.0.212"
 
     environment:
       EMQX_NAME: miemmtec
